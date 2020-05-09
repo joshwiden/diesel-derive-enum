@@ -4,7 +4,7 @@
 
 Use Rust enums directly with [`diesel`](https://github.com/diesel-rs/diesel) ORM.
 
-The latest release, `0.4.4`, requires `diesel 1.1+`.
+The latest release, `1.0.0`, is tested against `diesel 1.4` and `rustc 1.39.0`. It _may_ work with older versions.
 
 *Note:* The current master branch tracks `diesel` master, and will **not** work with `diesel 1.x`.
 
@@ -13,7 +13,7 @@ The latest release, `0.4.4`, requires `diesel 1.1+`.
 #### Cargo.toml
 ```toml
 [dependencies]
-diesel-derive-enum = { version = "0.4", features = ["..."] } # "postgres", "mysql" or "sqlite"
+diesel-derive-enum = { version = "1", features = ["..."] } # "postgres", "mysql" or "sqlite"
 ```
 
 #### Rust
