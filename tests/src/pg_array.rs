@@ -1,7 +1,7 @@
 use diesel::insert_into;
 use diesel::prelude::*;
 
-use common::*;
+use crate::common::*;
 
 #[cfg(feature = "postgres")]
 pub fn create_table(conn: &PgConnection) {
@@ -14,7 +14,8 @@ pub fn create_table(conn: &PgConnection) {
             my_enum_arr my_enum[] NOT NULL
         );
     "#,
-    ).unwrap();
+    )
+    .unwrap();
 }
 
 #[test]
